@@ -1,0 +1,89 @@
+body {
+    background-color: rgb(224, 221, 221);
+}
+
+#display {
+    background-color: white;
+    width: 100%;
+    text-align: right;
+    font-size: xxx-large;
+    height: 1.5em;
+}
+
+#buttons {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-column-gap: 5%;
+    grid-row-gap: 5%;
+    padding: 1em;
+} 
+
+#calculator {
+    background-color: black;
+    margin: auto;
+    overflow: auto;
+    border: solid;
+    border-color: grey;
+    border-width: .5em;
+    display: table;
+    overflow: hidden;
+    min-height: 35em;
+}
+
+.button {
+    margin: auto;
+    height: 2.2em;
+    width: 2.5em;
+    border-radius: 50%;
+    font-size: xx-large;
+    background-color: rgb(56, 55, 55);
+}
+
+.button:hover {
+    background-color: grey;
+}
+
+.button:active {
+    transform: translateY(2px) translateX(2px);
+
+}
+
+#clear {
+    grid-column: span 2;
+    width: 6em;
+    border-radius: 10%;
+}
+
+.operator, #decimal, #posneg {
+    color: green;
+    font-weight: 700;
+}
+
+#equals {
+    background-color: green;
+    font-weight: 700;
+}
+
+#equals:hover {
+    background-color: rgb(26, 153, 26);
+}
+
+#clear {
+    color: red;
+}
+
+#backspace {
+    color: red;
+}
+
+.number {
+    color: white;
+}
+
+#operatorDisplay {
+    background-color: rgb(240, 230, 230);
+    width: 100%;
+    height: 1.5em;
+    font-size: large;
+    text-align: right;
+}
